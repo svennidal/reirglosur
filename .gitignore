@@ -1,0 +1,6 @@
+build*
+part/
+test.txt
+glosur.mkd
+glosur.html
+*.swp
