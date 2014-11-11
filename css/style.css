@@ -25,4 +25,5 @@ p {
 td {
 	margin-left: 50px;
 	min-width: 200px;
+	text-align: left;
 }
