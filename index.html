@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		<div id='date'>
-Tue Nov 11 20:30:14 GMT 2014
+Tue Nov 11 20:31:00 GMT 2014
 		</div>
 		<div class='letter'>
 <h1 id="reikniritsglosur">Reikniritsglosur</h1>
@@ -94,112 +94,35 @@ for (int i = 0; i &lt; n; i++0
 <li>N<sup>3</sup></li>
 <li>2<sup>N</sup></li>
 </ul>
-<h4 id="þetta-er-sennilega-bog-o-notation">Þetta er sennilega Bog O notation</h4>
-<table>
-<thead>
-<tr class="header">
-<th align="left">sort algorithm</th>
-<th align="center">Worst Case</th>
-<th align="right">Average Case</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Selection Sort</td>
-<td align="center">N<sup>2</sup></td>
-<td align="right">N<sup>2</sup></td>
-</tr>
-<tr class="even">
-<td align="left">Bubble Sort</td>
-<td align="center">N<sup>2</sup></td>
-<td align="right">N<sup>2</sup></td>
-</tr>
-<tr class="odd">
-<td align="left">Insertion Sort</td>
-<td align="center">N<sup>2</sup></td>
-<td align="right">N<sup>2</sup></td>
-</tr>
-<tr class="even">
-<td align="left">Mergesort</td>
-<td align="center">N * log N</td>
-<td align="right">N * log N<sup>2</sup></td>
-</tr>
-<tr class="odd">
-<td align="left">Quicksort</td>
-<td align="center">N<sup>2</sup></td>
-<td align="right">N * log N<sup>2</sup></td>
-</tr>
-<tr class="even">
-<td align="left">Radix</td>
-<td align="center">N</td>
-<td align="right">N</td>
-</tr>
-<tr class="odd">
-<td align="left">Treesort</td>
-<td align="center">N<sup>2</sup></td>
-<td align="right">N * log N<sup>2</sup></td>
-</tr>
-<tr class="even">
-<td align="left">Heapsort</td>
-<td align="center">N * log N</td>
-<td align="right">N * log N</td>
-</tr>
-</tbody>
-</table>
-<h4 id="þetta-er-úr-bókinni------á-eftir-að-uupæra">Þetta er úr bókinni ---- Á EFTIR AÐ UUPÆRA</h4>
-<table>
-<thead>
-<tr class="header">
-<th align="left">sort algorithm</th>
-<th align="center">Worst Case</th>
-<th align="center">Average Case</th>
-<th align="right">Best case</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Selection Sort</td>
-<td align="center">Altaf eins</td>
-<td align="center">N<sup>2</sup>/2 + N</td>
-<td align="right">Altaf eins</td>
-</tr>
-<tr class="even">
-<td align="left">Bubble Sort</td>
-<td align="center">N<sup>2</sup></td>
-<td align="center">N<sup>2</sup></td>
-</tr>
-<tr class="odd">
-<td align="left">Insertion Sort</td>
-<td align="center">N<sup>2</sup></td>
-<td align="center">N<sup>2</sup></td>
-</tr>
-<tr class="even">
-<td align="left">Mergesort</td>
-<td align="center">N * log N</td>
-<td align="center">N * log N<sup>2</sup></td>
-</tr>
-<tr class="odd">
-<td align="left">Quicksort</td>
-<td align="center">N<sup>2</sup></td>
-<td align="center">N * log N<sup>2</sup></td>
-</tr>
-<tr class="even">
-<td align="left">Radix</td>
-<td align="center">N</td>
-<td align="center">N</td>
-</tr>
-<tr class="odd">
-<td align="left">Treesort</td>
-<td align="center">N<sup>2</sup></td>
-<td align="center">N * log N<sup>2</sup></td>
-</tr>
-<tr class="even">
-<td align="left">Heapsort</td>
-<td align="center">N * log N</td>
-<td align="center">N * log N</td>
-</tr>
-</tbody>
-</table>
+<!--
+#### Þetta er sennilega Bog O notation
+
+|   sort algorithm      |   Worst Case      |   Average Case                    |
+|   ------------------- |   :-------------: |   ------------------------------: |
+|   Selection Sort      |   N<sup>2</sup>   |   N<sup>2</sup>                   |
+|   Bubble Sort         |   N<sup>2</sup>   |   N<sup>2</sup>                   |
+|   Insertion Sort      |   N<sup>2</sup>   |   N<sup>2</sup>                   |
+|   Mergesort           |   N * log N       |   N * log N<sup>2</sup>           |
+|   Quicksort           |   N<sup>2</sup>   |   N * log N<sup>2</sup>           |
+|   Radix               |   N               |   N                               |
+|   Treesort            |   N<sup>2</sup>   |   N * log N<sup>2</sup>           |
+|   Heapsort            |   N * log N       |   N * log N                       |
+
+
+#### Þetta er úr bókinni ---- Á EFTIR AÐ UUPÆRA
+
+|   sort algorithm      |   Worst Case      |   Average Case                    |   Best case                   |
+|   ------------------- |   :-------------: |   :-----------------------------: |   --------------------------: |
+|   Selection Sort      |   Altaf eins      |   N<sup>2</sup>/2 + N             |   Altaf eins                  |
+|   Bubble Sort         |   N<sup>2</sup>   |   N<sup>2</sup>                   |
+|   Insertion Sort      |   N<sup>2</sup>   |   N<sup>2</sup>                   |
+|   Mergesort           |   N * log N       |   N * log N<sup>2</sup>           |
+|   Quicksort           |   N<sup>2</sup>   |   N * log N<sup>2</sup>           |
+|   Radix               |   N               |   N                               |
+|   Treesort            |   N<sup>2</sup>   |   N * log N<sup>2</sup>           |
+|   Heapsort            |   N * log N       |   N * log N                       |
+-->
+
 <h4 id="aðeins-um-sort-algorithmana">Aðeins um sort algorithmana</h4>
 <ul>
 <li><strong>Selection Sort</strong>
