@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		<div id='date'>
-Tue Nov 11 20:18:21 GMT 2014
+Tue Nov 11 20:30:14 GMT 2014
 		</div>
 		<div class='letter'>
 <h1 id="reikniritsglosur">Reikniritsglosur</h1>
@@ -264,6 +264,69 @@ for (int i = 0; i &lt; n; i++0
 <li><strong>Tímaflækjan er log N</strong></li>
 </ul></li>
 </ul>
+<h3 id="meira-um-sort-algorithmana">Meira um sort algorithmana</h3>
+<table>
+<thead>
+<tr class="header">
+<th align="left">algorithm</th>
+<th align="center">stable</th>
+<th align="center">in place</th>
+<th align="center">running time</th>
+<th align="right">Extra space</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">selection sort</td>
+<td align="center">no</td>
+<td align="center">yes</td>
+<td align="center">N<sup>2</sup></td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="left">insertion sort</td>
+<td align="center">yes</td>
+<td align="center">yes</td>
+<td align="center">N &lt;-&gt; N<sup>2</sup></td>
+<td align="right">1</td>
+</tr>
+<tr class="odd">
+<td align="left">shell sort</td>
+<td align="center">no</td>
+<td align="center">yes</td>
+<td align="center">N log N ?</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="left">quicksort</td>
+<td align="center">no</td>
+<td align="center">yes</td>
+<td align="center">N log N</td>
+<td align="right">lg N</td>
+</tr>
+<tr class="odd">
+<td align="left">3-way quicksort</td>
+<td align="center">no</td>
+<td align="center">yes</td>
+<td align="center">N &lt;-&gt; N log N</td>
+<td align="right">lg N</td>
+</tr>
+<tr class="even">
+<td align="left">mergesort</td>
+<td align="center">yes</td>
+<td align="center">no</td>
+<td align="center">N log N</td>
+<td align="right">N</td>
+</tr>
+<tr class="odd">
+<td align="left">heapsort</td>
+<td align="center">no</td>
+<td align="center">yes</td>
+<td align="center">N log N</td>
+<td align="right">1</td>
+</tr>
+</tbody>
+</table>
 		</div>
 	</body>
 </html>
