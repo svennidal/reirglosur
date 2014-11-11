@@ -1,0 +1,6 @@
+#!/bin/bash
+pandoc glosur.mkd -o part/main.html && cat part/head.html part/main.html part/foot.html > index.html && open index.html
+git pull
+git add index.html
+git commit -m "updating index.html"
+git push

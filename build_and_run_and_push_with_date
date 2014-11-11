@@ -1,0 +1,7 @@
+#!/bin/bash
+date > part/date.txt
+pandoc glosur.mkd -o part/main.html && cat part/headDate1.html  part/date.txt part/headDate2.html part/main.html part/foot.html > index.html && open index.html
+git pull
+git add index.html
+git commit -m "updating index.html"
+git push
