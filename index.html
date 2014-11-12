@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		<div id='date'>
-Wed Nov 12 18:27:52 GMT 2014
+Wed Nov 12 22:52:30 GMT 2014
 		</div>
 		<div class='letter'>
 <h1 id="reikniritsglosur">Reikniritsglosur</h1>
@@ -50,7 +50,7 @@ Wed Nov 12 18:27:52 GMT 2014
 <li>Order of Growth and Simple sorting algorithms †</li>
 <li>Advanced sorting algorithms †</li>
 <li>Merge sort - fixed †</li>
-<li>Hrúgur</li>
+<li>Hrúgur †</li>
 <li>Binary Search Tree</li>
 <li>Kd trees</li>
 <li>Red-Black trees, DFS and BFS</li>
@@ -339,6 +339,35 @@ for (int i = 0; i &lt; n; i++0
 <li><strong>NX bytes</strong> fyrir N mörg eintök af týpunni X</li>
 <li><strong>ROUND UP</strong>: leggur saman allt dótið og bætir við bytes þannig að það sé hægt að deila með 8</li>
 </ul>
+<h3 id="binary-search-tree">Binary Search Tree</h3>
+<p><em>Venjulegt search</em> fer til vinstri ef það er minna en nóðan sem það er statt í og hægri ef það er meira en nóðan sem það er statt í.</p>
+<h4 id="inorder">inorder</h4>
+<p>Er basicly að kunna stafrófið.. Og þegar ég segi kunna, að þá meina ég að hafa það cheat sheetinu.</p>
+<pre><code>    private void inorder(Node tit) {
+        if(tit != null) {
+            inorder(tit.left);
+            System.out.print(tit.data + &quot; &quot;);
+            inorder(tit.right);
+        }
+    }</code></pre>
+<h4 id="postorder">postorder</h4>
+<p>Þá fer maður eins langt niður til vinstri eins og hægt er, skrifar það út, bakkar um einn og reynir að komast lengst til vinstri aftur, þegar það er búið að fara lengst til vinstri að þá er í lagi að skrifa út nóðuna sem maður fer tilbaka</p>
+<pre><code>    private void postorder(Node tit) {
+        if(tit != null) {
+            postorder(tit.left);
+            postorder(tit.right);
+            System.out.print(tit.data + &quot; &quot;);
+        }
+    }</code></pre>
+<h4 id="preorder">preorder</h4>
+<p>Ferð í gegnum allt tréið, lengst til vinstri fyrst, en skrifar út um leið og nóða er heimsótt</p>
+<pre><code>    private void preorder(Node tit) {
+        if(tit != null) {
+            System.out.print(tit.data + &quot; &quot;);
+            preorder(tit.left);
+            preorder(tit.right);
+        }
+    }</code></pre>
 		</div>
 	</body>
 </html>
