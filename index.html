@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		<div id='date'>
-Wed Nov 12 12:20:39 GMT 2014
+Wed Nov 12 13:23:47 GMT 2014
 		</div>
 		<div class='letter'>
 <h1 id="reikniritsglosur">Reikniritsglosur</h1>
@@ -301,7 +301,13 @@ for (int i = 0; i &lt; n; i++0
 </tr>
 </tbody>
 </table>
-<p><em>String</em> er <strong>ADT</strong> eins og <em>Array</em> og <em>Linked List</em></p>
+<p><em>String</em> er <strong>Object</strong> eins og <em>Array</em> og <em>Linked List</em>.</p>
+<p><strong>Object</strong> eru altaf með 16 bytes í overhead. Það er 8 fyrir reference og rest fyrir garbage collection upplýsingar og annað. þannig að:</p>
+<ul>
+<li><strong>16 bytes</strong> í overhead</li>
+<li><strong>NX bytes</strong> fyrir N mörg eintök af týpunni X</li>
+<li><strong>ROUND UP</strong>: leggur saman allt dótið og bætir við bytes þannig að það sé hægt að deila með 8</li>
+</ul>
 		</div>
 	</body>
 </html>
