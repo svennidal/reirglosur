@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		<div id='date'>
-Wed Nov 12 22:52:30 GMT 2014
+Wed Nov 12 22:58:06 GMT 2014
 		</div>
 		<div class='letter'>
 <h1 id="reikniritsglosur">Reikniritsglosur</h1>
@@ -341,24 +341,6 @@ for (int i = 0; i &lt; n; i++0
 </ul>
 <h3 id="binary-search-tree">Binary Search Tree</h3>
 <p><em>Venjulegt search</em> fer til vinstri ef það er minna en nóðan sem það er statt í og hægri ef það er meira en nóðan sem það er statt í.</p>
-<h4 id="inorder">inorder</h4>
-<p>Er basicly að kunna stafrófið.. Og þegar ég segi kunna, að þá meina ég að hafa það cheat sheetinu.</p>
-<pre><code>    private void inorder(Node tit) {
-        if(tit != null) {
-            inorder(tit.left);
-            System.out.print(tit.data + &quot; &quot;);
-            inorder(tit.right);
-        }
-    }</code></pre>
-<h4 id="postorder">postorder</h4>
-<p>Þá fer maður eins langt niður til vinstri eins og hægt er, skrifar það út, bakkar um einn og reynir að komast lengst til vinstri aftur, þegar það er búið að fara lengst til vinstri að þá er í lagi að skrifa út nóðuna sem maður fer tilbaka</p>
-<pre><code>    private void postorder(Node tit) {
-        if(tit != null) {
-            postorder(tit.left);
-            postorder(tit.right);
-            System.out.print(tit.data + &quot; &quot;);
-        }
-    }</code></pre>
 <h4 id="preorder">preorder</h4>
 <p>Ferð í gegnum allt tréið, lengst til vinstri fyrst, en skrifar út um leið og nóða er heimsótt</p>
 <pre><code>    private void preorder(Node tit) {
@@ -368,6 +350,33 @@ for (int i = 0; i &lt; n; i++0
             preorder(tit.right);
         }
     }</code></pre>
+<div class="figure">
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Sorted_binary_tree_preorder.svg/220px-Sorted_binary_tree_preorder.svg.png" alt="Alt text" /><p class="caption">Alt text</p>
+</div>
+<h4 id="inorder">inorder</h4>
+<p>Er basicly að kunna stafrófið.. Og þegar ég segi kunna, að þá meina ég að hafa það cheat sheetinu.</p>
+<pre><code>    private void inorder(Node tit) {
+        if(tit != null) {
+            inorder(tit.left);
+            System.out.print(tit.data + &quot; &quot;);
+            inorder(tit.right);
+        }
+    }</code></pre>
+<div class="figure">
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Sorted_binary_tree_inorder.svg/220px-Sorted_binary_tree_inorder.svg.png" alt="Alt text" /><p class="caption">Alt text</p>
+</div>
+<h4 id="postorder">postorder</h4>
+<p>Þá fer maður eins langt niður til vinstri eins og hægt er, skrifar það út, bakkar um einn og reynir að komast lengst til vinstri aftur, þegar það er búið að fara lengst til vinstri að þá er í lagi að skrifa út nóðuna sem maður fer tilbaka</p>
+<pre><code>    private void postorder(Node tit) {
+        if(tit != null) {
+            postorder(tit.left);
+            postorder(tit.right);
+            System.out.print(tit.data + &quot; &quot;);
+        }
+    }</code></pre>
+<div class="figure">
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Sorted_binary_tree_postorder.svg/220px-Sorted_binary_tree_postorder.svg.png" alt="Alt text" /><p class="caption">Alt text</p>
+</div>
 		</div>
 	</body>
 </html>
