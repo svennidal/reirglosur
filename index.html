@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		<div id='date'>
-Wed Nov 12 17:34:28 GMT 2014
+Wed Nov 12 17:48:43 GMT 2014
 		</div>
 		<div class='letter'>
 <h1 id="reikniritsglosur">Reikniritsglosur</h1>
@@ -159,16 +159,19 @@ for (int i = 0; i &lt; n; i++0
 <li><em>Finnur svo næst minsta og setur það næst fremst, og svo koll af kolli.</em></li>
 <li><strong>Altaf sama flækjustig</strong> <!-- * *Byrjar á því að finna minnsta stakið og skiptir fremsta stakinu út fyrir það.* --> <!-- *  *Svo finnur það næst-minnsta og skiptir næst-fremsta út fyrir það* --></li>
 </ul></li>
-<li><strong>Insertion Sort</strong>
+<li><strong>Insertion Sort</strong> <!--
+    * Finnur minnsta stakið
+    * Geymir það og færir öll stökin frá og fyrsta, að stakinu vinstra megin við vinstra
+    * Til hægri, þannig fyrsta slottið er tómt og setur svo minnsta stakið í það
+    * *Er svona svipað eins og þegar maður er að raða spilum á hendi.*
+    * *Gerir þetta svo koll af kolli endurkvæmt eins og í Selection Sort, finnur næstminsta, setur næstfremst*
+    * **Average er flækjustigið N<sup>2</sup>/4 samanburðir + N<sup>2</sup>/4 skiptingar**
+    * **Versta tilfelli er það N<sup>2</sup>/2 samanburðir + N<sup>2</sup>/2 skiptingar**
+    * **Besta tilfelli er það N, með 1 samanburði og 0 skiptingum**
+-->
 <ul>
-<li>Finnur minnsta stakið</li>
-<li>Geymir það og færir öll stökin frá og fyrsta, að stakinu vinstra megin við vinstra</li>
-<li>Til hægri, þannig fyrsta slottið er tómt og setur svo minnsta stakið í það</li>
-<li><em>Er svona svipað eins og þegar maður er að raða spilum á hendi.</em></li>
-<li><em>Gerir þetta svo koll af kolli endurkvæmt eins og í Selection Sort, finnur næstminsta, setur næstfremst</em></li>
-<li><strong>Average er flækjustigið N<sup>2</sup>/4 samanburðir + N<sup>2</sup>/4 skiptingar</strong></li>
-<li><strong>Versta tilfelli er það N<sup>2</sup>/2 samanburðir + N<sup>2</sup>/2 skiptingar</strong></li>
-<li><strong>Besta tilfelli er það N, með 1 samanburði og 0 skiptingum</strong></li>
+<li>Skoðar stak og ber það við stök fyrir neðan sig. Byrjar á fyrsta stakinu og vinnur sig upp</li>
+<li>Þegar það finnur réttan stað til að troða inn að þá færir það allt draslið til hægri svo það sé pláss</li>
 </ul></li>
 <li><strong>Shell Sort</strong>
 <ul>
