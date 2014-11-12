@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		<div id='date'>
-Wed Nov 12 15:59:08 GMT 2014
+Wed Nov 12 16:48:01 GMT 2014
 		</div>
 		<div class='letter'>
 <h1 id="reikniritsglosur">Reikniritsglosur</h1>
@@ -71,6 +71,12 @@ for (int i = 0; i &lt; n; i++0
 <p>Fyrir Quick Find á Ent að þá þýðir 0-6 að öll gildi sem eru eins og það sem er í sæti 0, taka gildi sem eru eins og það sem er í staki 6. Þannig endar það union fylki mjög eins. <br> <strong>P-Q</strong> <em>Öll P breytast í Q</em></p>
 <h4 id="quick-union">Quick Union</h4>
 <p>Fyrir Quick Union á ENT að þá þýðir 0-6 að það tré, í heild sinni, sem 0 tilheyrir fer undir það tré sem 6 tilheyrir. Þannig endar union fylkið með mjög fjölbreytt, ef tala er jöfn sætanúmerinu sínu, er hún rót.<br> <strong>P-Q</strong> <em>Rótin af laufinu P fer undir rótina af laufinu Q</em></p>
+<h3 id="weighted-quick-union">Weighted Quick Union</h3>
+<p>Fyrir wighted quick union á ENT að þá þýðir 0-6 að það tré, í heild sinni, sem 0 tilheyrir fer undir það tré sem 6 tilheyrir <strong>EF</strong> að tréið sem 0 tilheyrir er minna en tréið sem 6 tilheyrir. Ef tréið sem 6 tilheyrir er minna eða jafn stórt tréiinu sem 0 tilheurur, þá fer tréið sem 6 tilheyrir undir rótina af tréinu sem 0 tilheyrir<br> <strong>p-q</strong>, <strong>P</strong> = <em>rótin sem <strong>p</strong> tileyrir</em>, <strong>Q</strong> = <em>rótin sem <strong>q</strong> tilheyrir</em></p>
+<ul>
+<li><strong>P &lt; Q</strong> - <em>P undir Q</em></li>
+<li><strong>P &gt;= Q</strong> - <em>Q undir P</em></li>
+</ul>
 <h3 id="skoðum-wqupc">Skoðum <strong>WQUPC</strong></h3>
 <table>
 <thead>
