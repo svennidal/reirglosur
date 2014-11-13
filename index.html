@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		<div id='date'>
-Thu Nov 13 14:35:42 GMT 2014
+Thu Nov 13 17:22:18 GMT 2014
 		</div>
 		<div class='letter'>
 <h1 id="reikniritsglosur">Reikniritsglosur</h1>
@@ -371,7 +371,7 @@ for (int i = 0; i &lt; n; i++0
 </div>
 <h4 id="postorder">postorder</h4>
 <p>Þá fer maður eins langt niður til vinstri eins og hægt er, skrifar það út, bakkar um einn og reynir að komast lengst til vinstri aftur, þegar það er búið að fara lengst til vinstri að þá er í lagi að skrifa út nóðuna sem maður fer tilbaka</p>
-<pre><code>    private void postorder(Node tit) {
+<pre><code>    ttttttt void postorder(Node tit) {
         if(tit != null) {
             postorder(tit.left);
             postorder(tit.right);
@@ -383,6 +383,11 @@ for (int i = 0; i &lt; n; i++0
 </div>
 <h3 id="kd-tree">KD-Tree</h3>
 <p>Þegar punkti er bætt í KD-Tree myndar hann svona línu sem afmarkar svæði. Hvort línan sé lárétt eða lóðrétt, fer allt eftir parent punkti.. þúst, hvort hann fékk lárétta eða lóðrétta línu.</p>
+<h3 id="mst-net">MST net</h3>
+<h4 id="kruskal">Kruskal</h4>
+<p>Þá þarf hvert vertex að tengjast netinu, en eins lítið og hægt er samt, byrjar á velja styðstu teninguna fyrst og svo koll af kolli þangað til allt er tengt.</p>
+<h4 id="prims">Prims</h4>
+<p>Hvert vertex þarf að tengjast, maður byrjar frá nr. 0 og fer upp og velur altaf styðust leið. Aftur á móti ef að einu leggirnir í þeim punkti sem maður er kominn í eru lengir en einhver leggur sem liggur í ótengda nóðu, þá föru við tilbaka og skoðum þann legg frekar, skoðum líka nokkuð að nóðan sem við tengudm hann upprunalega við sé með styttri legg og svo koll af kolli.</p>
 		</div>
 	</body>
 </html>
